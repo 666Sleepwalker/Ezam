@@ -1,0 +1,67 @@
+﻿<Window x:Class="OOO_StroiMateriali.EditProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOO_StroiMateriali"
+        mc:Ignorable="d"
+        Title="Редактирование товара" Height="800" Width="400" MinHeight="800" MinWidth="400" FontFamily="Comic Sans MS" FontSize="22" Icon="/OOO_StroiMateriali;component/Assets/icon.ico">
+    <Grid>
+        <StackPanel>
+            <Label Margin="5" HorizontalAlignment="Center">
+                Редактирование
+            </Label>
+
+            <Label  HorizontalAlignment="Center">
+                Артикул
+            </Label>
+            <TextBox IsReadOnly="True" x:Name="articleElem"  Width="200"></TextBox>
+
+            <Label  HorizontalAlignment="Center">
+                Наименование
+            </Label>
+            <TextBox x:Name="nameElem"  Width="200"></TextBox>
+
+            <Label  HorizontalAlignment="Center">
+                Описание
+            </Label>
+            <TextBox x:Name="descriptionElem"  Width="200"></TextBox>
+
+            <Label Margin="5" HorizontalAlignment="Center">
+                Категория
+            </Label>
+            <ComboBox x:Name="categoryElem"  Width="200">
+                <ComboBoxItem>Общестроительные материалы</ComboBoxItem>
+                <ComboBoxItem>Защита лица, глаз, головы</ComboBoxItem>
+                <ComboBoxItem>Стеновые и фасадные материалы</ComboBoxItem>
+                <ComboBoxItem>Ручной инструмент</ComboBoxItem>
+                <ComboBoxItem>Сухие строительные смеси и гидроизоляция</ComboBoxItem>
+            </ComboBox>
+
+            <Label Margin="5" HorizontalAlignment="Center">
+                Производитель
+            </Label>
+            <TextBox x:Name="manufacturerElem"  Width="200"></TextBox>
+
+            <Label Margin="5" HorizontalAlignment="Center">
+                Цена
+            </Label>
+            <TextBox x:Name="costElem"  Width="200"></TextBox>
+
+            <Label Margin="5" HorizontalAlignment="Center">
+                Скидка
+            </Label>
+            <TextBox x:Name="discountElem"  Width="200"></TextBox>
+
+            <Label Margin="5" HorizontalAlignment="Center">
+                Остаток на складе
+            </Label>
+            <TextBox x:Name="quantityElem"  Width="200"></TextBox>
+
+            <Button Margin="15" Width="150" Background="#FFA8D697" Click="Button_Click">
+                Сохранить
+            </Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
